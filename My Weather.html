@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9102c74a30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="Myweather.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- Navingation Bar -->
+        <nav>
+            <label class="logo"><a href="">WeatherWise</a></label>
+            <ul class="navbar">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#services">Services</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--Front Section  -->
+    <main>
+        <div class="backgroundImage">
+
+            <!-- UpperSection -->
+
+            <section class="upperSection">
+                <!-- Search bar -->
+                <div class="search-wrap">
+                    <input type="text" id="searchInput" placeholder="Enter the Location">
+
+                    <button id="searchButton">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <ul id="ul"></ul>
+                </div>
+
+            </section>
+
+            <!-- <hr> -->
+
+            <!-- Middle Section -->
+
+
+            <section class="middleSection">
+                <div class="searchResults">
+
+                    <div class="headingAndTime">
+                        <h1 id="heading">Current Weather</h1>
+                        <p id="time">Time</p>
+                    </div>
+
+                    <hr style="border: 1px solid #ebebeb; margin: 0px 19px; ">
+
+                    <div class="cityInfo">
+                        <h1 id="city"></h1>
+                        <h2 id="country"></h2>
+                    </div>
+                    <div class="temperature">
+                        <h1 id="temp"></h1>
+                        <button id="unitButton"></button>
+                    </div>
+                    <div class="otherInfo">
+                        <p id="feelslike"></p>
+                        <p id="wind"></p>
+                        <p id="humidity"></p>
+                        <p id="pressure"></p>
+                    </div>
+
+                    <div class="placeinfo">
+                    <i class="fa-solid fa-camera"></i>
+                    <p>Like the image that you see?</p>
+                    <p id="moreinfo"></p>
+                </div>
+            </section>
+
+            <!-- <hr> -->
+
+            <!-- Lower Section -->
+
+            <section class="lowerSection">
+                This is lower Section
+            </section>
+        </div>
+    </main>
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        This is a footer
+    </footer>
+
+
+    <script src="weather.js"></script>
+</body>
+
+</html>

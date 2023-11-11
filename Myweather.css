@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./background.jpg);
+    background-size: cover;
+
+}
+
+                     /* ---------NavBAR CSSS  */
+nav {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    height: 70px; /* Adjust the height as needed */
+}
+
+.logo {
+    display: inline-block;
+    color: white; /* Text color for the logo */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.nav-item {
+    display: inline-block;
+}
+
+li.nav-item a {
+    color: white; /* Text color for the links */
+    text-decoration: none;
+    padding: 14px 16px; /* Spacing around the links */
+}
+
+li.nav-item a:hover {
+    background-color: #444; /* Background color for the links when hovered */
+}
+
+          /* ---------------NAVBAR CSS ENDS-------------- */
+
+/* MAIN SECTION */
+
+
+        /* ----------------Upper Section CSS----------------- */
+
+.upperSection{
+    margin: 10px;
+}       
+#searchInput{
+    width: 40%;
+    height: 8vh;
+    margin: 10px 10px 10px 400px;
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+}
+.autocom-box{
+        /* padding: 10px 80px; */
+        max-height: 280px;
+        overflow-y: auto;
+        opacity: 0;
+    pointer-events: none;
+    }
+
+
+.autocom-box li{
+    list-style: none;
+    padding: 0px 12px;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+    display: none;
+}
+
+.autocom-box li:hover{
+    background: #efefef;
+}
+#searchButton{
+    margin-left: -69px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    font-size: inherit;
+    cursor: pointer;
+    opacity: 0.8;
+    font-weight: bold;
+    color: white;
+}
+       
+        /* --------------Upper Section Ends-------------- */
+
+        /* ---------------Middle Section CSS--------------- */
+.middleSection{
+    background-position-y:top ;
+}    
+.searchResults{
+    background-color: black;
+    opacity: 0.7;
+    display: none;    color: white;
+    margin: 30px 0px 30px 0px;
+    border-radius: 5px;
+    border: none;
+    width: 45%;
+    height: 200px;
+
+} 
+.headingAndTime{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px 10px 20px;
+} 
+#city{
+    display: inline-block;
+    margin: 10px 30px 0px 30px;
+}
+
+#country{
+    margin: 10px 30px 0px 30px;
+    font-size: small;
+}
+
+/* Temperature div, includes both temp number and unit */
+.temperature{
+    width: 25%;
+    height: 10vh;
+    margin: 2px 0px 0px 28px;
+    display: flex
+}
+
+/* temp number */
+#temp{
+    font-size: 60px;
+}
+
+/* temp unit */
+#unitButton{
+    background: none;
+    color: white;
+    font-size: x-large;
+    border: none;
+    cursor: pointer
+}
+
+.otherInfo{
+    display: inline-block;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin: -101px 0px -61px 352px;
+    font-size: 20px;
+}
+
+#feelslike{
+    padding: 2px;
+}
+
+#wind{
+    padding: 5px;
+
+}
+#humidity{
+    padding: 5px;
+
+}
+
+#pressure{
+    padding: 5px;
+}
+
+.placeinfo{
+    display: none;
+    color: white;
+    float: inline-end;
+    margin: 30px 100px 10px 0px;
+    text-align: center;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    opacity: 0.6;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    width: 200px;
+    height: 66px;
+}
+.placeinfo:hover{
+    opacity: 0.4;
+    height: 200px;
+}
+
+#moreinfo{
+    font-size: larger;
+    padding-top: 25px
+}
+        /* --------------Middle Secion Ends */
+
+        /* --------------Lower Section CSS -------------------*/
+.lowerSection{
+    background-color: orange;
+}
+
+        /* --------------Lower Section Ends------------------ */
+
+
+        /* -------------FOOTER CSS--------------------------- */
+        .footer{
+            background-color: brown;
+        }
+        /* ---------------FOOTER ENDS---------------------- */
